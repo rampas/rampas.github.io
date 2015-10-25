@@ -292,7 +292,7 @@
 var trackOutboundLink = function(url) {
    ga('send', 'event', 'Mas_Rampas', 'click', url, {'hitCallback':
      function () {
-     //document.location = url;
+        window.open(url,'_blank')
      }
    });
 }
